@@ -200,7 +200,7 @@ export const artists = [
     "paintings": 328
   }
 ]
-const myName = 'Brax'
+
 // 🖌🖼 M V P 🖼🖌 //
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -208,10 +208,9 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
-
+console.log(artists[0].name);
 //(2) Bio of the third artist (2nd index) in the array 
-
+console.log(artists[2].bio)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -278,9 +277,11 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array, id, name, years, genre,nationality, bio) {
+  array.push({id,name,years,genre, nationality,bio})
+  return array
 }
+console.log(addArtist(artists, 20, 'Braxton','1995 - current day', 'web design','black', "lorem ipsum"))
 
 
 
